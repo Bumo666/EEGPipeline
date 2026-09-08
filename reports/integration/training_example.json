@@ -1,0 +1,193 @@
+{
+  "purpose": "Train-only usage example; no validation or test evaluation",
+  "paper_accuracy_reproduced": false,
+  "python": "3.13.9",
+  "versions": {
+    "torch": "2.12.1",
+    "numpy": "2.5.1",
+    "braindecode": "1.5.1"
+  },
+  "cases_passed": 4,
+  "cases": [
+    {
+      "dataset": "2a",
+      "subject": 1,
+      "model": "eegnet",
+      "implementation": "braindecode.models.EEGNet",
+      "constructor_args": {
+        "n_chans": 22,
+        "n_times": 1000,
+        "n_outputs": 4
+      },
+      "architecture_options": "Pinned backend defaults",
+      "seed": 42,
+      "device": "cpu",
+      "optimizer": "Adam",
+      "learning_rate": 0.001,
+      "epochs": 1,
+      "max_batches_per_epoch": 2,
+      "steps": 2,
+      "batch_shape": [
+        8,
+        1,
+        22,
+        1000
+      ],
+      "backend_input_shape": [
+        8,
+        22,
+        1000
+      ],
+      "n_classes": 4,
+      "train_trials": 288,
+      "parameter_count": 3444,
+      "train_sha256": "9d864a85b2ff13514549c01c98a6b1dad8aa3183f1c40d970eaa4cb89f04bb17",
+      "meta_sha256": "31f06cfd388aaed56ffb909e41fef636cc6d9262648d41547ece347450a2a94a",
+      "test_used": false,
+      "validation_used": false,
+      "status": "passed",
+      "loss": 1.4140644073486328,
+      "gradient_norm": 2.4967574617052883,
+      "logits_shape": [
+        8,
+        4
+      ],
+      "parameters_updated": true
+    },
+    {
+      "dataset": "2a",
+      "subject": 1,
+      "model": "eegnex",
+      "implementation": "braindecode.models.EEGNeX",
+      "constructor_args": {
+        "n_chans": 22,
+        "n_times": 1000,
+        "n_outputs": 4
+      },
+      "architecture_options": "Pinned backend defaults",
+      "seed": 42,
+      "device": "cpu",
+      "optimizer": "Adam",
+      "learning_rate": 0.001,
+      "epochs": 1,
+      "max_batches_per_epoch": 2,
+      "steps": 2,
+      "batch_shape": [
+        8,
+        1,
+        22,
+        1000
+      ],
+      "backend_input_shape": [
+        8,
+        22,
+        1000
+      ],
+      "n_classes": 4,
+      "train_trials": 288,
+      "parameter_count": 56452,
+      "train_sha256": "9d864a85b2ff13514549c01c98a6b1dad8aa3183f1c40d970eaa4cb89f04bb17",
+      "meta_sha256": "31f06cfd388aaed56ffb909e41fef636cc6d9262648d41547ece347450a2a94a",
+      "test_used": false,
+      "validation_used": false,
+      "status": "passed",
+      "loss": 1.343209981918335,
+      "gradient_norm": 2.5479582370755094,
+      "logits_shape": [
+        8,
+        4
+      ],
+      "parameters_updated": true
+    },
+    {
+      "dataset": "2b",
+      "subject": 1,
+      "model": "eegnet",
+      "implementation": "braindecode.models.EEGNet",
+      "constructor_args": {
+        "n_chans": 3,
+        "n_times": 1000,
+        "n_outputs": 2
+      },
+      "architecture_options": "Pinned backend defaults",
+      "seed": 42,
+      "device": "cpu",
+      "optimizer": "Adam",
+      "learning_rate": 0.001,
+      "epochs": 1,
+      "max_batches_per_epoch": 2,
+      "steps": 2,
+      "batch_shape": [
+        8,
+        1,
+        3,
+        1000
+      ],
+      "backend_input_shape": [
+        8,
+        3,
+        1000
+      ],
+      "n_classes": 2,
+      "train_trials": 400,
+      "parameter_count": 2146,
+      "train_sha256": "e4885d470d7357b1c9cb38a15fcc9039e58a37addec4ccdda8a2db0ef340659d",
+      "meta_sha256": "788c60c4dfaddd2f98aa4b3457772c0dcd01e6f5ebc4199e30cadae9d7490750",
+      "test_used": false,
+      "validation_used": false,
+      "status": "passed",
+      "loss": 0.6351611018180847,
+      "gradient_norm": 1.8762797114619671,
+      "logits_shape": [
+        8,
+        2
+      ],
+      "parameters_updated": true
+    },
+    {
+      "dataset": "2b",
+      "subject": 1,
+      "model": "eegnex",
+      "implementation": "braindecode.models.EEGNeX",
+      "constructor_args": {
+        "n_chans": 3,
+        "n_times": 1000,
+        "n_outputs": 2
+      },
+      "architecture_options": "Pinned backend defaults",
+      "seed": 42,
+      "device": "cpu",
+      "optimizer": "Adam",
+      "learning_rate": 0.001,
+      "epochs": 1,
+      "max_batches_per_epoch": 2,
+      "steps": 2,
+      "batch_shape": [
+        8,
+        1,
+        3,
+        1000
+      ],
+      "backend_input_shape": [
+        8,
+        3,
+        1000
+      ],
+      "n_classes": 2,
+      "train_trials": 400,
+      "parameter_count": 54738,
+      "train_sha256": "e4885d470d7357b1c9cb38a15fcc9039e58a37addec4ccdda8a2db0ef340659d",
+      "meta_sha256": "788c60c4dfaddd2f98aa4b3457772c0dcd01e6f5ebc4199e30cadae9d7490750",
+      "test_used": false,
+      "validation_used": false,
+      "status": "passed",
+      "loss": 0.7000558376312256,
+      "gradient_norm": 2.041864136660667,
+      "logits_shape": [
+        8,
+        2
+      ],
+      "parameters_updated": true
+    }
+  ]
+}

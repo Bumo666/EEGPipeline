@@ -1,0 +1,4 @@
+# Optional dependencies for the model integration examples.
+-r requirements.txt
+braindecode==1.5.1
+pytest>=8.0
